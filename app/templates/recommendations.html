@@ -3,20 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <title>Recommendations</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='recommend.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='popcorn.png') }}" type="image/png">
 </head>
 <body>
-    <h1>Recommendations for "{{ liked_movie }}"</h1>
-    
-    {% if recommendations %}
-        <ul>
-            {% for movie in recommendations %}
-                <li>{{ movie }}</li>
-            {% endfor %}
-        </ul>
-    {% else %}
-        <p>No recommendations found. Try a different movie.</p>
-    {% endif %}
-    
-    <a href="/">Go back</a>
+    <div class="container">
+        <h1>Recommendations for "{{ liked_movie }}"</h1>
+        
+        {% if recommendations %}
+            <ul>
+                {% for movie in recommendations %}
+                    <li>{{ movie }}</li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p>No recommendations found. Try a different movie.</p>
+        {% endif %}
+        
+        <a href="/">Go back</a>
+    </div>
 </body>
 </html>

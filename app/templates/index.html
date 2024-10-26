@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <title>Movie Recommender</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='popcorn.png') }}" type="image/png">
 </head>
 <body>
     <h1>Welcome to the Movie Recommender!</h1>
-    <p>Type in a movie you like, and we’ll recommend similar movies.</p>
+    <p>Type in a movie you like, and we’ll recommend similar movies!</p>
     
     <form action="/recommend" method="post">
         <label for="movie_title">Movie Title:</label>
