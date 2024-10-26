@@ -2,8 +2,8 @@ import pandas as pd
 import torch
 
 # Load CSV data
-movies_df = pd.read_csv('/Users/ben/Downloads/movie_recommender/movies.csv')
-ratings_df = pd.read_csv('/Users/ben/Downloads/movie_recommender/ratings.csv')
+movies_df = pd.read_csv('Data/movies.csv')
+ratings_df = pd.read_csv('Data/ratings.csv')
 
 # Process genres into a one-hot encoding
 movies_df['genres'] = movies_df['genres'].apply(lambda x: x.split('|'))
