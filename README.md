@@ -14,3 +14,13 @@ This project is a Flask-based web application for movie recommendations using co
    ```bash
    git clone https://github.com/your-username/movie-recommender.git
    cd movie-recommender
+2)
+python3 -m venv venv
+source venv/bin/activate
+
+3)
+pip install -r requirements.txt
+
+4) 
+flask run
+
