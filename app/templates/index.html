@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movie Recommender</title>
+</head>
+<body>
+    <h1>Welcome to the Movie Recommender!</h1>
+    <p>Type in a movie you like, and we’ll recommend similar movies.</p>
+    
+    <form action="/recommend" method="post">
+        <label for="movie_title">Movie Title:</label>
+        <input type="text" id="movie_title" name="movie_title" required>
+        <button type="submit">Get Recommendations</button>
+    </form>
+</body>
+</html>
